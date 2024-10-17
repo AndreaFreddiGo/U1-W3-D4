@@ -45,24 +45,6 @@ h3 {
   unicode-bidi: isolate;
 }
 
-h4 {
-  display: block;
-  margin-block-start: 1.33em;
-  margin-block-end: 1.33em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  unicode-bidi: isolate;
-}
-
-form {
-  display: inline;
-}
-
-.color-epic {
-  color: #ba51d7;
-}
-
 header,
 main,
 main + section {
@@ -85,10 +67,6 @@ main + section {
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.day:hover {
-  background-color: #15132e;
 }
 
 h3 {
@@ -122,52 +100,6 @@ h3 {
   padding-top: 20px;
 }
 
-input {
-  width: 130px;
-  min-height: 36px;
-  background-color: #0c0b1d;
-  color: #ebebeb;
-  border: none;
-  padding: 10px;
-  font-weight: 700;
-  border-radius: 3px;
-}
-
-input:focus {
-  background-color: #2d2a59;
-}
-
-input::placeholder {
-  color: #ebebeb;
-}
-
-input:focus::placeholder {
-  color: #615d9c;
-}
-
-#newMeetingDay {
-  display: inline-block;
-  min-height: 40px;
-}
-
-#newMeetingDay.hasDay {
-  font-size: 28px;
-  background-color: #0c0b1d;
-  border-radius: 3px;
-  color: #ebebeb;
-  padding: 0px 6px;
-}
-
-#newMeetingTime::-webkit-calendar-picker-indicator {
-  background-color: #7a408a;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#newMeetingName {
-  width: 205px;
-}
-
 button {
   cursor: pointer;
   background-color: #7a408a;
@@ -180,21 +112,4 @@ button {
   font-size: 1.5rem;
   font-family: 'Outfit', sans-serif;
   border-radius: 10%;
-}
-
-#appointments {
-  display: none;
-  margin-bottom: 2rem;
-}
-
-#appointmentsList {
-  padding-inline-start: 16px;
-}
-
-#appointmentsList li {
-  min-height: 30px;
-}
-
-#appointmentsList li::marker {
-  color: #7a408a;
 }

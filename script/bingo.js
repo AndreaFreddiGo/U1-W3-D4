@@ -1,8 +1,5 @@
-// salvo in una costante il numero totale di "numeri" disponibili per il tabellone del bingo
-// e creo un array vuoto che dovrà contenere i numeri estratti
-
+// salvo in una costante il numero totale di "numeri" disponibili per il tabellone della tombola
 const totalBingoNumbers = 76
-const extractedNumbers = []
 
 // creo funzione che costruisca il tabellone sulla base dei numeri totali che desidero
 const createNumberCells = function () {
@@ -26,7 +23,7 @@ const createNumberCells = function () {
 // creo una funzione che attivi il bottone al suo "click"
 const button = document.getElementsByTagName('button')[0]
 button.addEventListener('click', function (e) {
-  const extractedNumber = Math.ceil(Math.random() * bingoCage.length)
+  const extractedNumber = Math.ceil(Math.random() * 76)
   // ora faccio in modo di evidenziare la cella del numero estratto
   // per prima cosa recupero il riferimento di tutte le celle ed ottengo un array di 76 elementi
   const numberCell = document.querySelectorAll('section div')
