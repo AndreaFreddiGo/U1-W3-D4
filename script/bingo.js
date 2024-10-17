@@ -27,15 +27,20 @@ const createNumberCells = function () {
 // creo una funzione che attivi il bottone al suo "click"
 const button = document.getElementsByTagName('button')[0]
 button.addEventListener('click', function (e) {
-  const i = Math.ceil(Math.random() * bingoCage.length)
-  const extractedNumber = bingoCage[i]
-  console.log(extractedNumber)
-  // ora faccio in modo di evidenziare la cella del numero estratto
-  // per prima cosa recupero il riferimento di tutte le celle ed ottengo un array di 76 elementi
-  const numberCell = document.querySelectorAll('section div')
-  // applico una classe (con stile css diverso) alla cella corrispondente al numero estratto
-  numberCell[extractedNumber - 1].classList.add('extracted')
-  bingoCage.splice(i, 1)
+  if (bingoCage.length === 0) {
+    alert('Sono stati estratti tutti i numeri')
+  } else {
+    const i = Math.floor(Math.random() * bingoCage.length)
+
+    const extractedNumber = bingoCage[i]
+    console.log(extractedNumber)
+    // ora faccio in modo di evidenziare la cella del numero estratto
+    // per prima cosa recupero il riferimento di tutte le celle ed ottengo un array di 76 elementi
+    const numberCell = document.querySelectorAll('section div')
+    // applico una classe (con stile css diverso) alla cella corrispondente al numero estratto
+    numberCell[extractedNumber - 1].classList.add('extracted')
+    bingoCage.splice(i, 1)
+  }
 })
 
 // chiamata delle funzioni all'avvio della pagina
