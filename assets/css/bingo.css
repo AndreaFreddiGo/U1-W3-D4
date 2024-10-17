@@ -48,7 +48,7 @@ h3 {
 header,
 main,
 main + section {
-  max-width: 1090px;
+  max-width: 1087px;
   margin-inline: auto;
 }
 
@@ -64,7 +64,7 @@ main + section {
   width: 105px;
   height: 105px;
   position: relative;
-  border: 1px solid transparent;
+  border: 1px solid #ebd45f;
   border-radius: 8px;
   cursor: pointer;
 }
