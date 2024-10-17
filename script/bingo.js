@@ -34,7 +34,7 @@ button.addEventListener('click', function (e) {
   const numberCell = document.querySelectorAll('section div')
   // applico una classe (con stile css diverso) alla cella corrispondente al numero estratto
   numberCell[extractedNumber - 1].classList.add('extracted')
-  bingoCage = bingoCage.splice(i, 1)
+  bingoCage.splice(i, 1)
   console.log(extractedNumber)
 })
 
